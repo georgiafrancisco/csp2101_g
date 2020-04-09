@@ -13,21 +13,21 @@ echo -e "AGE GUESSING GAME\n"
 
 #Generate a random number(age)
 
-((answer = RANDOM % 99))
+((answer = RANDOM % 100))
 
 #Providing a user input and ask user to provide input
 #Giving indication whether the input is too high or low
 
 while ((guess != answer)); do
       num=num+1
-      read -p "Guess an AGE (HINT: It's below 99 ;) ):" guess
+      read -p "Guess an AGE:" guess
       if ((guess < answer)); then
-         echo "Higher!"
+         echo "TOO LOW!"
       elif ((guess > answer)); then
-         echo "Lower!"
+         echo "TOO HIGH!"
       fi 
 done
 
 #Print a message to user if they have guessed the age correctly
 
-echo -e "CORRECT! YOU GUESSED THE AGE!!"
+echo -e "CORRECT! YOU GUESSED THE AGE!!!"
