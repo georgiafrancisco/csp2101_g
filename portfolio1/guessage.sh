@@ -15,7 +15,7 @@ echo -e "AGE GUESSING GAME\n"
 
 ((answer = RANDOM % 99))
 
-#Providing a user input and aks user to provide input
+#Providing a user input and ask user to provide input
 #Giving indication whether the input is too high or low
 
 while ((guess != answer)); do
